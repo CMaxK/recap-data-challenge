@@ -8,8 +8,8 @@
 
 ## Methodology
 1. Fetch all invoices and save to file
-2. EDA and Transformation to handle **net revenue** and **churned amount**
-3. Refactor into .py scripts
+2. EDA and Transformation to handle **net revenue** and **churned amount**. The heavy lifting is done in the helpers.py script. I first preporcess the invoices by aggregating monthly invoices for each unique contract ID. I then create a new column to calculate the previous months net_revenue and shift it to next month to allow for a direct comparison between the current month and previous month. If no previous month exists, the churn is equal to 0. I then drop the temporary column to make the table in line with what was shown in the instructions.
+3. Refactor notebook code into .py scripts
 4. Add tests + CI
 
 ## How to run code:
@@ -24,7 +24,7 @@ Once you have the code stored locally you can run the main script by navigating 
 ```cd recap-data-challenge```  
 Followed by:  
 ```python main.py```  
-If you see **Completed running of main.py** this means you have succesfully completed all necessary steps so far. If the script could not run you will see other errors (detailed within comments of main.py script)
+If you see **Completed running of main.py** printed in the terminal, this means you have succesfully completed all necessary steps so far. If the script could not run, you will see other errors (detailed within comments of main.py script)
 
 You will now have a copy of the cleaned final csv with net revenue and churn amounts in a data folder stored as [net_revenue_churn.csv](data/net_revenue_churn.csv). The original json object containing all invoices (Task 1) is also stored in the data folder as [invoices.json](data/invoices.json)
 
@@ -34,6 +34,6 @@ I included some unittests and incorporated these into a CI workflow.
 To run the tests simply run:
 ```python tests.py -v```
 This returns a verbose overview of all tests using the unittest library. The passing tests should look like this:  
-![Tests](images/Screenshot 2024-08-06 at 16.01.33.png)
+![Tests](images/tests_screenshot.png)
 
 The CI workflow includes a linter and refactoring functionality. I currently bypass the linter but with more time I would fix linting issues.
