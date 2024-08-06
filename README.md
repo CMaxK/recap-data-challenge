@@ -1,4 +1,4 @@
-![CI](https://github.com/username/example-repo/workflows/CI/badge.svg)
+[![CI](https://github.com/CMaxK/recap-data-challenge/actions/workflows/ci.yml/badge.svg)](https://github.com/CMaxK/recap-data-challenge/actions/workflows/ci.yml)
 
 # recap-data-challenge
 
