@@ -32,7 +32,7 @@ My initial Python code and some EDA on the final csv file is documented in the *
 
 I included some unittests and incorporated these into a CI workflow. 
 To run the tests simply run:  
-```python tests.py -v```
+```python tests.py -v```  
 This returns a verbose overview of all tests using the unittest library. The passing tests should look like this:  
 ![Tests](images/tests_screenshot.png)
 
