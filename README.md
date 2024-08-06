@@ -4,7 +4,7 @@
 
 ## Goal
 1. To find net monthly revenue per contract ID
-2. To calculate the monthly churned amount per contract ID
+2. To calculate the monthly churned amount per contract ID, per month
 
 ## Methodology
 1. Fetch all invoices and save to file
