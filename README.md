@@ -26,9 +26,9 @@ Followed by:
 ```python main.py```  
 If you see **Completed running of main.py** this means you have succesfully completed all necessary steps so far. If the script could not run you will see other errors (detailed within comments of main.py script)
 
-You will now have a copy of the cleaned final csv with net revenue and churn amounts in a data folder stored as *net_revenue_churn.csv**. The original json object containing all invoices (Task 1) is also stored in the data folder as *invoices.json*
+You will now have a copy of the cleaned final csv with net revenue and churn amounts in a data folder stored as [net_revenue_churn.csv](data/net_revenue_churn.csv). The original json object containing all invoices (Task 1) is also stored in the data folder as [invoices.json](data/invoices.json)
 
-My initial Python code and some EDA on the final csv file is documented in the *notebooks/recap_data_challenge.ipynb* [Link to the notebook](notebooks/recap_data_challenge.ipynb). At the bottom I list the contract id's with the highest to lowest churn amounts. 
+My initial Python code and some EDA on the final csv file is documented in the *notebooks/recap_data_challenge.ipynb* [notebook](notebooks/recap_data_challenge.ipynb). At the bottom I list the contract id's with the highest to lowest churn amounts. 
 
 I included some unittests and incorporated these into a CI workflow. 
 To run the tests simply run:
