@@ -31,7 +31,7 @@ You will now have a copy of the cleaned final csv with net revenue and churn amo
 My initial Python code and some EDA on the final csv file is documented in the *notebooks/recap_data_challenge.ipynb* [notebook](notebooks/recap_data_challenge.ipynb). At the bottom I list the contract id's with the highest to lowest churn amounts as I believe this would be one of the most important insights to stakeholders/the product team.
 
 I included some unittests and incorporated these into a CI workflow. 
-To run the tests simply run:
+To run the tests simply run:  
 ```python tests.py -v```
 This returns a verbose overview of all tests using the unittest library. The passing tests should look like this:  
 ![Tests](images/tests_screenshot.png)
