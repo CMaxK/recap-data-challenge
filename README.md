@@ -33,6 +33,7 @@ My initial Python code and some EDA on the final csv file is documented in the *
 I included some unittests and incorporated these into a CI workflow. 
 To run the tests simply run:
 ```python tests.py -v```
-This returns a verbose overview of all tests using the unittest library
+This returns a verbose overview of all tests using the unittest library. The passing tests should look like this:  
+![Tests](images/Screenshot 2024-08-06 at 16.01.33.png)
 
 The CI workflow includes a linter and refactoring functionality. I currently bypass the linter but with more time I would fix linting issues.
