@@ -1,9 +1,12 @@
 import requests
 import json
 import pandas as pd
+import os
+from dotenv import load_dotenv
 
+load_dotenv()
 
-BASE_URL = "https://nookdtmzylu7w75p7atatnzom40zmdpz.lambda-url.eu-central-1.on.aws/invoices"
+BASE_URL = os.getenv("BASE_URL")
 
 def fetch_all_invoices():
     """
