@@ -24,7 +24,7 @@ Once you have the code stored locally you can run the main script by navigating 
 ```cd recap-data-challenge```  
 Followed by:  
 ```python main.py```  
-If you see **Completed running of main.py** this means you have succesfully completed all necessary steps so far. If the script could not run you will see other errors (detailed within comments of main.py script)
+If you see **Completed running of main.py** printed in the terminal, this means you have succesfully completed all necessary steps so far. If the script could not run, you will see other errors (detailed within comments of main.py script)
 
 You will now have a copy of the cleaned final csv with net revenue and churn amounts in a data folder stored as [net_revenue_churn.csv](data/net_revenue_churn.csv). The original json object containing all invoices (Task 1) is also stored in the data folder as [invoices.json](data/invoices.json)
 
