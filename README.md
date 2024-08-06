@@ -8,7 +8,7 @@
 
 ## Methodology
 1. Fetch all invoices and save to file
-2. EDA and Transformation to handle **net revenue** and **churned amount**. The heavy lifting is done in the helpers.py script. I first preporcess the invoices by aggregating monthly invoices for each unique contract ID. I then create a new column to calculate the previous months net_revenue and shift it to next month to allow for a direct comparison between the current month and previous month. If no previous month exists, the chrun is equal to 0. I then drop the temporary column to make the table in line with what was shown in the instructions.
+2. EDA and Transformation to handle **net revenue** and **churned amount**. The heavy lifting is done in the helpers.py script. I first preporcess the invoices by aggregating monthly invoices for each unique contract ID. I then create a new column to calculate the previous months net_revenue and shift it to next month to allow for a direct comparison between the current month and previous month. If no previous month exists, the churn is equal to 0. I then drop the temporary column to make the table in line with what was shown in the instructions.
 3. Refactor notebook code into .py scripts
 4. Add tests + CI
 
