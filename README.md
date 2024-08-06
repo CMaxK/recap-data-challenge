@@ -28,7 +28,7 @@ Within the .env file, add the BASE_URL given within the task instructions as:
 ```BASE_URL="this_is_an_example_of_the_base_url.aws/invoices"```  
 You can now run the code:  
 ```python main.py```  
-If you see  
+If you see:  
 **Completed running of main.py**  
 printed in the terminal, this means you have succesfully completed all necessary steps so far. If the script could not run, you will see other errors (detailed within comments of main.py script)
 
